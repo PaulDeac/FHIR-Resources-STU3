@@ -1,0 +1,67 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://opencimi.org/logical-model/fhir/AbstractDurableEncounter" />
+  <name value="AbstractDurableEncounter" />
+  <title value="AbstractDurableEncounter" />
+  <status value="draft" />
+  <description value="Contains properties common to multiple kinds of Encounters which last more than a few hours. Such encounters typically include an admission and discharge process." />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="AbstractDurableEncounter" />
+  <baseDefinition value="http://opencimi.org/logical-model/fhir/Encounter" />
+  <snapshot>
+    <element>
+      <path value="AbstractDurableEncounter" />
+      <label value="AbstractDurableEncounter" />
+    </element>
+    <element>
+      <path value="AbstractDurableEncounter.patientAdmission" />
+      <label value="patientAdmission" />
+      <definition value="Information about the admission process." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="http://opencimi.org/logical-model/fhir/BaseClinicalStatement" />
+      </type>
+    </element>
+    <element>
+      <path value="AbstractDurableEncounter.patientTransfer" />
+      <label value="patientTransfer" />
+      <definition value="Information about the transfer process" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="http://opencimi.org/logical-model/fhir/BaseClinicalStatement" />
+      </type>
+    </element>
+    <element>
+      <path value="AbstractDurableEncounter.patientDischarge" />
+      <label value="patientDischarge" />
+      <definition value="Information about the discharge process." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="http://opencimi.org/logical-model/fhir/BaseClinicalStatement" />
+      </type>
+    </element>
+    <element>
+      <path value="AbstractDurableEncounter.patientCondition" />
+      <label value="patientCondition" />
+      <definition value="'Indicates the patient's current medical condition for the purpose of communicating to non-medical outside parties, e.g., family, employer, religious minister, media, etc.' - HL7 Version 2.8, PV2-42. Possible values include (from HL7 Table 434): Satisfactory; Critical; Poor; Stable; Other; Unknown." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="http://opencimi.org/logical-model/fhir/CODED_TEXT" />
+      </type>
+    </element>
+    <element>
+      <path value="AbstractDurableEncounter.patientStatus" />
+      <label value="patientStatus" />
+      <definition value="'Indicates the status of the episode of care.' - HL7 Version 2.8, PV2-24. Possible values include (from HL7 Table 216): Active Inpatient; Discharged Inpatient." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="http://opencimi.org/logical-model/fhir/CODED_TEXT" />
+      </type>
+    </element>
+  </snapshot>
+</StructureDefinition>
