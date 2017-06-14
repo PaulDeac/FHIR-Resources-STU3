@@ -21,7 +21,7 @@
       <path value="Observation" />
       <short value="Measurements and simple assertions" />
       <definition value="Measurements and simple assertions made about a patient, device or other subject." />
-      <comment value="Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as lab reports, etc." />
+      <comment value="I just edited this to trigger a github update :)" />
       <alias value="Vital Signs" />
       <alias value="Measurement" />
       <alias value="Results" />
