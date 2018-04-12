@@ -1,0 +1,35 @@
+<DeviceComponent xmlns="http://hl7.org/fhir">
+  <id value="433" />
+  <meta>
+    <profile value="http://devices.fhir.org/StructureDefinition/VmdDeviceComponent" />
+  </meta>
+  <version value="123456789" />
+  <extension url="http://devices.fhir.org/StructureDefinition/devicecomponent-instance">
+    <valueUnsignedInt value="1" />
+  </extension>
+  <identifier>
+    <use value="temp" />
+    <system value="urn:ietf:rfc:3986" />
+    <value value="urn:uuid:aa0e1091-5dfe-435b-bb96-c5ce2992e2dc" />
+  </identifier>
+  <type>
+    <coding>
+      <system value="urn:iso:std:iso:11073:10101" />
+      <code value="69710" />
+      <display value="MDC_DEV_ANALY_PRESS_BLD_VMD" />
+    </coding>
+  </type>
+  <source>
+    <reference value="Device/72" />
+  </source>
+  <parent>
+    <reference value="DeviceComponent/427" />
+  </parent>
+  <operationalStatus>
+    <coding>
+      <system value="http://hl7.org/fhir/operational-status" />
+      <code value="transduc-discon" />
+      <display value="Transducer Disconnected" />
+    </coding>
+  </operationalStatus>
+</DeviceComponent>
